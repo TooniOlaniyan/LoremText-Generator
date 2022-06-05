@@ -13,7 +13,9 @@ body{
     font-family: 'Kdam Thmor Pro', sans-serif;
     background-color: #DAEAF1;
 }
-
+p{
+    margin: 1rem;
+}
 .content{
     display: flex;
     gap: 3rem;

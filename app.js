@@ -58,6 +58,7 @@ form.addEventListener('submit',(e)=>{
 
 
     const value = parseInt(info.value);
+    // console.log(value);
     const random = Math.floor(Math.random()* text.length);
 
     if(value<0 || value>9 || isNaN(value)){
@@ -65,12 +66,12 @@ form.addEventListener('submit',(e)=>{
 
     }
     else{
-       let tempText = text.slice(0, value);
-       tempText = tempText.map( (item)=> {
+       let newText = text.slice(0, value);
+       newText = newText.map( (item)=> {
         return `<p class="result">${item}</p>`;
       }).join("");
 
-    display.innerHTML = tempText;
+    display.innerHTML = newText;
     }
 
 })
